@@ -1,0 +1,81 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 90vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    .login-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        .upside{
+            display: flex;
+            flex-direction: column;
+            .text-login{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                gap: 5px;
+                font-size: 30px;
+                font-weight: 100;
+                text-transform: uppercase;
+                font-family: 'Labrada', sans-serif;
+                color: #C69749;
+            }
+                .line{
+                    width: 100%;
+                height: 0.5px;
+                margin: 20px 0;
+                background-color: #735F32;
+                }
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .text{
+                text-transform: lowercase;
+                font-size: 18px;
+                font-weight: 100;
+                color: #735F32;
+            }
+            input{
+                padding: 10px;
+                background-color: #282A3A;
+                color: white;
+                border: 0;
+                border-radius: 2px;
+                font-size: 15px;
+                font-weight: 200;
+                letter-spacing: 1px;
+                &::placeholder{
+                    color: white;
+                    opacity: 0.5;
+                }    
+            }
+            button{
+                width: 100px;
+                color: black;
+                background-color: #C69749;
+                margin: 10px auto;
+                border-radius: 3px;
+                height: 30px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+
+        }
+    }
+    .btm-text{
+        margin: 20px 5px;
+        a{
+            text-decoration: none;
+            color: #735F32;
+        }
+    }
+}

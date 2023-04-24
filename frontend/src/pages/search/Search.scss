@@ -1,0 +1,57 @@
+$breakpoint-tablet: 768px;
+
+.search{
+    position: relative;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    gap: 3rem;
+    margin-top: 30px; 
+    @media (max-width: $breakpoint-tablet) {
+        grid-template-columns: 0 100% 0;
+        margin: 80px 0;
+        gap: 0;
+    }
+    .search-section{
+        margin: 0 20% ;
+        @media (max-width: $breakpoint-tablet) {
+            margin: 0 10px;
+        }
+        .upside{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            input{
+                border: solid;
+                border-color: rgba($color: white, $alpha: 0.5);
+                border-width: 2px;
+                color: white;
+                border-radius: 10px;
+                height: 50px;
+                width: 80%;
+                padding: 0  10px;
+                font-size: 18px;
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                &::placeholder{
+                    color: #735F32;
+                    font-size: 18px;
+                    padding: 0 10px;
+                }
+                @media (max-width: $breakpoint-tablet) {
+                    width: 95%;
+                }
+            }
+        }
+        .line{
+            width: 100%;
+            height: 0.5px;
+            margin: 20px 0;
+            background-color: #735F32;
+        }
+        .btm{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }   
+}
